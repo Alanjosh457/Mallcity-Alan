@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import styles from './CreateMeme.module.css';
 
 const CreateMeme = ({ onCreate }) => {
   const [title, setTitle] = useState('');
   const [imageUrl, setImageUrl] = useState('');
   const [tags, setTags] = useState('');
+  const navigate = useNavigate(); // ✅ Add this
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -17,12 +19,15 @@ const CreateMeme = ({ onCreate }) => {
         tags: tags.split(',').map(tag => tag.trim())
       })
     });
+
     const data = await response.json();
+
     if (response.ok) {
       onCreate(data);
       setTitle('');
       setImageUrl('');
       setTags('');
+      navigate('/'); // ✅ Redirect to homepage
     } else {
       alert(data.error);
     }
