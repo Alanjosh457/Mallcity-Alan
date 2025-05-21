@@ -1,0 +1,40 @@
+.createForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #111;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+  max-width: 500px;
+  margin: auto;
+}
+
+.createForm input {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #1f1f1f;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+}
+
+.createForm input::placeholder {
+  color: #888;
+}
+
+.createForm button {
+  padding: 0.8rem;
+  background: #00ffc3;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.createForm button:hover {
+  background: #00c0a3;
+}

@@ -1,0 +1,33 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #0b0b0b;
+  border-bottom: 2px solid #00ffff;
+  box-shadow: 0 0 10px #00ffff55;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-family: 'Orbitron', sans-serif;
+  color: #00ffff;
+  text-shadow: 0 0 10px #00ffff99;
+}
+
+.navbar a {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.navbar a:hover {
+  color: #00ffff;
+  text-shadow: 0 0 10px #00ffffcc;
+}

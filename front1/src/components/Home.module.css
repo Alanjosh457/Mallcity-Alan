@@ -1,0 +1,82 @@
+.container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #0a0a0a;
+  color: #00ffff;
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  background-color: #111;
+  border-right: 2px solid #00ffcc;
+  padding: 2rem 1rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  padding: 1rem 0;
+  border-bottom: 1px solid #333;
+  cursor: pointer;
+}
+
+/* Main Area */
+.main {
+  flex: 1;
+  padding: 2rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.heading {
+  font-size: 2.5rem;
+  color: #00ffff;
+}
+
+/* Stats section */
+.stats {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  flex: 1;
+  background: #1a1a1a;
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid #00ffcc;
+  box-shadow: 0 0 10px #00ffcc55;
+}
+
+.placeholder {
+  height: 150px;
+  background-color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  font-size: 1rem;
+}
+
+/* Meme feed */
+.feed {
+  background-color: #111;
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid #00ffff44;
+}
