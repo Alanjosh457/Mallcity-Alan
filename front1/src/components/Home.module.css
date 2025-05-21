@@ -80,3 +80,131 @@
   border-radius: 12px;
   border: 1px solid #00ffff44;
 }
+.stats {
+  position: relative;
+  height: 200px;
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a); /* cyberpunk-dark */
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+}
+
+.card {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+/* Placeholder for the circular subreddit image */
+.placeholder {
+  position: absolute;
+  bottom: -40px; /* Half of avatar size to make it overlap */
+  left: 30px;
+  width: 80px;
+  height: 80px;
+  background-color: #111;
+  border: 3px solid cyan;
+  border-radius: 50%;
+  box-shadow: 0 0 10px cyan;
+  background-image: url('/images/subreddit-icon.png'); /* Replace with your icon if available */
+  background-size: cover;
+  background-position: center;
+}
+.container {
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(to right, #0f0f0f, #1a1a1a);
+  color: #fff;
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background: #111;
+  padding: 30px 20px;
+  border-right: 2px solid cyan;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: cyan;
+  text-shadow: 0 0 5px cyan;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.menu li {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.menu li:hover {
+  color: #0ff;
+  text-shadow: 0 0 10px #0ff;
+}
+
+/* Main content */
+.main {
+  flex: 1;
+  padding: 40px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.heading {
+  font-size: 36px;
+  color: #0ff;
+  text-shadow: 0 0 10px #0ff;
+}
+
+/* Banner Section - Reddit style */
+.stats {
+  position: relative;
+  height: 200px;
+  background: linear-gradient(135deg, #222, #111);
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 60px;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+  padding: 100px;
+}
+
+.card {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+/* Avatar (like subreddit icon) */
+.placeholder {
+  position: absolute;
+  bottom: -40px;
+  left: 30px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: url('/images/subreddit-icon.png') center/cover no-repeat, #111;
+  border: 3px solid cyan;
+  box-shadow: 0 0 10px cyan;
+}
+
+/* Meme feed */
+.feed {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

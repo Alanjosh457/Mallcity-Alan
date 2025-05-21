@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import styles from './Home.module.css';
 import MemeList from './MemeList';
+import banner1 from '../images/banner.jpg';
+
+
 
 function Home() {
   const [memes, setMemes] = useState([]);
@@ -43,19 +46,17 @@ const handleVote = (updatedMeme) => {
       {/* Main Content */}
       <main className={styles.main}>
         <div className={styles.header}>
-          <h1 className={styles.heading}>Cyberpunk Meme Arena</h1>
+          <h1 className={styles.heading}>r/Cyberpunkmemes</h1>
         </div>
 
         {/* Stats */}
         <section className={styles.stats}>
           <div className={styles.card}>
-            <h3>Donut Chart</h3>
-            <div className={styles.placeholder}>[Donut Chart Here]</div>
+            <img src={banner1} />
+            <div className={styles.placeholder}></div>
           </div>
-          <div className={styles.card}>
-            <h3>Ranking</h3>
-            <div className={styles.placeholder}>[Top 3 Memes]</div>
-          </div>
+         
+          
         </section>
 
         {/* Meme Feed */}
