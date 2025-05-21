@@ -3,7 +3,7 @@ import MemeCard from './MemeCard';
 import styles from './MemeList.module.css';
 import io from 'socket.io-client';
 
-const socket = io('http://localhost:4000');
+const socket = io('https://mallcity-alan-backend.onrender.com');
 
 export default function MemeList({ memes, onVote }) {
   // WebSocket: Listen for new bids

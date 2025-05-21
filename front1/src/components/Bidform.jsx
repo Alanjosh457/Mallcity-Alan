@@ -13,7 +13,7 @@ const Bidform = ({ memeId, onBidPlaced }) => {
     setError('');
 
     try {
-      const res = await fetch('http://localhost:4000/bids', {
+      const res = await fetch('http://https://mallcity-alan-backend.onrender.com/bids', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ meme_id: memeId, user_id: userId, credits: parseInt(credits) }),

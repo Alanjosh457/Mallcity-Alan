@@ -4,7 +4,7 @@ import styles from './VoteButtons.module.css';
 const VoteButtons = ({ memeId, onVote }) => {
   const vote = async (type) => {
     try {
-      const res = await fetch(`http://localhost:4000/memes/${memeId}/vote`, {
+      const res = await fetch(`https://mallcity-alan-backend.onrender.com/memes/${memeId}/vote`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ type }), // 'up' or 'down'

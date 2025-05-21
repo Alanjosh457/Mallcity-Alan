@@ -8,7 +8,7 @@ const CreateMeme = ({ onCreate }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch('http://localhost:4000/memes', {
+    const response = await fetch('https://mallcity-alan-backend.onrender.com/memes', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({

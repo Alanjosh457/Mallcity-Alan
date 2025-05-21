@@ -6,7 +6,7 @@ const Leaderboard = () => {
 
   useEffect(() => {
     const fetchLeaderboard = async () => {
-      const res = await fetch('http://localhost:4000/memes/leaderboard');
+      const res = await fetch('https://mallcity-alan-backend.onrender.com/memes/leaderboard');
       const data = await res.json();
       setMemes(data);
     };

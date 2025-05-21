@@ -6,7 +6,7 @@ function Home() {
   const [memes, setMemes] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:4000/memes')
+    fetch('https://mallcity-alan-backend.onrender.com/memes')
       .then(res => res.json())
       .then(data => setMemes(data))
       .catch(err => console.error('Failed to fetch memes:', err));
